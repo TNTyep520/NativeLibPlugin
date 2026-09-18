@@ -38,12 +38,12 @@ android {
 
             //插件包在启动器内显示的名称
             //Plugin package display name within the launcher
-            manifestPlaceholders["des"] = "zstd-jni 1.5.7-6-dhcompat"
+            manifestPlaceholders["des"] = "zstd-jni 1.5.7-12-dhcompat"
 
             //JVM环境参数配置
             //JVM environment parameter configuration
             manifestPlaceholders["environment"] = mutableMapOf<String,String>().apply {
-                put("ZstdNativePath", "{nativeLibraryDir}libzstd-jni-1.5.7-6-dhcompat.so")
+                put("ZstdNativePath", "{nativeLibraryDir}libzstd-jni-1.5.7-12-dhcompat.so")
             }.run {
                 buildList {
                     this@run.forEach { (key, value) ->
