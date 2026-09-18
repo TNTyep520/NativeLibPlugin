@@ -16,12 +16,14 @@ android {
         }
     }
 
+    val versionString = "v1.5.7-12-dhcompat b1ab612"
+
     defaultConfig {
         applicationId = "com.commonlauncher.nativeplugin"
         minSdk = 26
         targetSdk = 34
-        versionCode = b1ab612
-        versionName = "1.5.7-12"
+        versionCode = 1
+        this.versionName = versionString
     }
 
     buildTypes {
@@ -38,7 +40,7 @@ android {
 
             //插件包在启动器内显示的名称
             //Plugin package display name within the launcher
-            manifestPlaceholders["des"] = "zstd-jni 1.5.7-12-dhcompat"
+            manifestPlaceholders["des"] = "zstd-jni $versionString"
 
             //JVM环境参数配置
             //JVM environment parameter configuration
